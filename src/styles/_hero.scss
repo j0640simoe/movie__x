@@ -1,0 +1,37 @@
+@use 'variaveis';
+
+.hero {
+    max-width: 640px;
+    
+    .title {
+        z-index: 2;
+        font-size: 1.2vw;
+        margin-bottom: 16px;
+        color: #fff;
+    }
+    
+    .button {
+        margin-top: 1vw;
+        margin-bottom: 4px;
+    }
+    
+    &__content { 
+        max-width: 640px;
+        
+    &__combos {
+        display: flex;
+        justify-content: space-between;
+
+    &__combo {
+        width: calc(50% - 12px);
+        position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+        z-index: 1;
+        }
+    }
+    }
+}
+}
