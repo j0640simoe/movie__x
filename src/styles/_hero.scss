@@ -46,4 +46,48 @@
             }
         }
     }
-}
+
+    @media (max-width: 932px) {  
+        .hero { // Add the selector inside the media query block
+            position: relative;
+            max-width: 300px; }
+
+            .title {
+                z-index: 2;
+                font-size: 12px;
+                line-height: 1; 
+                margin-bottom: 16px;
+                color: #fff;
+                padding-left: 5%;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .button {
+              position: absolute;
+              top: calc(50% + 20px); // Adjust the value as needed
+              right: 7%; // Adjust the value as needed
+          }
+
+            &__content { 
+                max-width: 200px;
+
+                &__combos {
+                display: flex;
+                padding-right: 10%;
+                gap: 10px;
+                justify-content: center;
+                z-index: 2;
+                margin-top: 30px;
+                top: 60%;
+                    }
+
+                img {
+                  width: 430px;
+                  height: auto;
+                  z-index: 1;
+              }
+              } 
+            } 
+          }

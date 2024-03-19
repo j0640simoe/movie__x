@@ -30,6 +30,7 @@
         list-style: none;
         flex-flow: row nowrap;
         }
+
         
 
         &__list__item img {
@@ -42,5 +43,53 @@
 
         &__list__item img:hover {
             transform: scale(1.1); 
+        }
+    }
+
+    
+    @media (max-width: 932px) {
+        .movies { 
+            width: 100%;
+            margin-top: 50px;
+    
+            h2 {
+                font-size: 13px;
+                color: white;
+                margin-bottom: 40px;
+                padding-left: 5%;
+            }
+    
+            h2::after {
+                content: '';
+                display: block;
+                max-width: 100%;
+                align-items: center;
+                height: 1px;
+                background: linear-gradient(to right, #FF2C1F, #000);
+                margin: 0 auto;
+                margin-top: 5px;
+            }
+    
+            &__list {
+                width: 100%; /* Calcula a largura total incluindo o espaçamento entre as imagens */
+                display: flex;
+                gap: 8px; /* Espaçamento entre as imagens */
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                list-style: none;
+            }
+    
+            &__list__item img {
+                width: 100px; 
+                height: 140px; /* Adjust the height as needed */
+                cursor: pointer;
+                transition: transform 0.3s ease;
+                opacity: 0.8;
+            }
+    
+            &__list__item img:hover {
+                transform: scale(1.1); 
+            }
         }
     }
